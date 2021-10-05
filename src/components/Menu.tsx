@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 const Menu = () => {
     return (
@@ -8,8 +9,9 @@ const Menu = () => {
                     <ul className="nav flex-column">
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="#">
-                                <span data-feather="home"></span>
-                                Dashboard
+                                <NavLink to={'/users'} className="nav-link" aria-current="page">
+                                    Users
+                                </NavLink>
                             </a>
                         </li>
                     </ul>
